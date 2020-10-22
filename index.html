@@ -28,6 +28,7 @@
         </div>
     </nav>
     <header class="jumbotron">
+
         <div  class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
@@ -38,8 +39,11 @@
                     <img src="./img/logo.png" calss="img-fluid" alt="Logo">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a href="#ReserveTabl">
-                        <button class="btn btn-warning col-12">
+                    <a href="#ReserveTabl" class="botton-ReserveTable">
+                        <button class="btn btn-block nav-link btn-warning col-12"
+                        data-toggle="tooltip" data-html="true"
+                        title="Or you can call me at <br><strong>+201019278438</strong>"
+                        data-placement="bottom">
                             Reserve Table
                         </button>
                     </a>
@@ -63,7 +67,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="row row-content align-items-center">
             <div class=" col-12 col-md-3 order-sm-first col-sm-4">
@@ -181,6 +184,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>

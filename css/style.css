@@ -41,3 +41,14 @@ body{
     text-decoration: none;
     color: rgb(26, 26, 26);
 }
+
+a.botton-ReserveTable{
+    text-decoration: none;
+    color: #000;
+}
+
+.botton-ReserveTable button{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
