@@ -42,29 +42,19 @@ a:hover{
     background-color: #512da8;
 }
 
-.card-header a{
-    text-decoration: none;
-    color: rgb(26, 26, 26);
+.ReserveTabl .Section{
+    margin-bottom: 20px;
+}
+.ReserveTabl .Section h5{
+    margin-right: 82px;
 }
 
-a.botton-ReserveTable{
-    text-decoration: none;
-    color: #000;
-}
-
-.botton-ReserveTable button{
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: -1px;
-}
 .carousel{
     background: #512da8;
 }
-
 .carousel-item{
     height: 300px;
 }
-
 .carousel-item img{
     position: absolute;
     top:0;
@@ -76,4 +66,23 @@ a.botton-ReserveTable{
 }
 .carousel-caption{
     margin-bottom: 36px;
+}
+
+.card-header a{
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+a.botton-ReserveTable{
+    text-decoration: none;
+    color: #000;
+}
+.botton-ReserveTable button{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.modal-dialog{
+    color: #000;
 }
