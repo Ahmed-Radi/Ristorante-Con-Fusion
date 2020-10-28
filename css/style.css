@@ -2,6 +2,11 @@ body{
     padding: 50px 0px 0px 0px;
     z-index: 0;
 }
+
+a:hover{
+    text-decoration: none;
+}
+
 .row-header{
     margin:0px auto ;
     padding:0px auto ;
