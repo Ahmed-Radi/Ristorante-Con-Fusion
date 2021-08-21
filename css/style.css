@@ -65,6 +65,7 @@ a:hover{
     max-height: 300px !important;
 }
 .carousel-caption{
+    /* margin-left: 229px; */
     margin-bottom: 36px;
 }
 
@@ -86,3 +87,18 @@ a.botton-ReserveTable{
 .modal-dialog{
     color: #000;
 }
+#carouselButton{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+/*
+@media screen and (max-width: 990px){
+    .carousel-caption{
+        margin-bottom: -10px;
+    }
+    .carousel-caption.my-info{
+        margin-bottom:24px;
+    }
+} */

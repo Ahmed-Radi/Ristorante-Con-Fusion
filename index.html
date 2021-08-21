@@ -112,8 +112,8 @@
                                             </div>
                                             <div class="col-5 col-sm-6">
                                                 <label for="1" class="col-1"><input id="1" type="radio" value="1" name="card">1</label>
-                                                <label for="2" class="col-1"><input id="2" type="radio" value="1" name="card">2</label>
-                                                <label for="3" class="col-1"><input id="3" type="radio" value="1" name="card">3</label>
+                                                <label for="2" class="col-1"><input id="2" type="radio" value="2" name="card">2</label>
+                                                <label for="3" class="col-1"><input id="3" type="radio" value="3" name="card">3</label>
                                                 <label for="4" class="col-1"><input id="4" type="radio" value="4" name="card">4</label>
                                                 <label for="5" class="col-1"><input id="5" type="radio" value="5" name="card">5</label>
                                                 <label for="6" class="col-1"><input id="6" type="radio" value="6" name="card">6</label>
@@ -163,6 +163,8 @@
         </div>
     </header>
 
+    <!-- start carousel section -->
+
     <div class="container">
         <div class="row row-content">
             <div class="col">
@@ -186,7 +188,7 @@
 
                         <div class="carousel-item">
                             <img src="img/Ahmed.jpg" alt="Ahmed" class="d-block img-fluid ahmedImg">
-                            <div class="carousel-caption d-none d-md-block">
+                            <div class="carousel-caption d-none d-md-block my-info">
                                 <h4>Chief Executive Officer</h4>
                                 <p class="d-none d-sm-block">Hello, I am Ahmed a student in the Faculty of Computer Science and Artificial Intelligence at Helwan University in Egypt.</p>
                             </div>
@@ -203,9 +205,19 @@
                     <a href="#mycarousel" class="carousel-control-next" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- End carousel section -->
 
         <div class="row row-content align-items-center">
             <div class=" col-12 col-md-3  order-sm-last col-sm-4">
@@ -295,6 +307,8 @@
         </div>
     </div> -->
 
+    <!-- Start foooter section -->
+
     <footer class="footer overflow-hidden">
         <div class="container">
             <div class="row">
@@ -336,9 +350,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- End foooter section -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./JQuery/JQ.js"></script>
     <!-- <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
