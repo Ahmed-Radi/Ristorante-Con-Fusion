@@ -3,44 +3,44 @@ $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
 
+// Height variables
 $carousel-item-height: 300px;
 
 //Mixin
-@mixin zero-margin($pad-up-down: 0px,$pad-left-right: 0px){
-    margin: 0 auto;
-    padding: $pad-up-down $pad-left-right;
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+	margin:0px auto;
+	padding: $pad-up-dn $pad-left-right;
 }
 
 body {
     padding: 50px 0 0 0;
     z-index: 0;
 }
-
 .row-header{
-    @include zero-margin();
+    @include zero-margin(0px,0px);
 }
 
 .row-content {
-    @include zero-margin(50px, 0);
-    border-bottom: 1 ridge;
-    min-height: 400px;
+    @include zero-margin(50px,0px);
+    border-bottom: 1px ridge;
+    min-height:400px;
 }
 
-.footer {
+.footer{
     background-color: $background-pale;
-    @include zero-margin(20px, 0);
+    @include zero-margin(20px, 0px);
 }
 
 .jumbotron {
-    @include zero-margin(70px, 30px);
-    background-color: $background-light;
-    color: floralwhite;
+    @include zero-margin(70px,30px);
+    background: $background-light ;
+    color:floralwhite;
 }
 
-.address{
+address{
     font-size:80%;
-    margin: 0;
-    color: #0f0f0f;
+    margin:0px;
+    color:#0f0f0f;
 }
 
 .navbar-dark {

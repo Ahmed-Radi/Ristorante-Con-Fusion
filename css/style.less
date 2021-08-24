@@ -3,12 +3,13 @@
 @background-light: #9575CD;
 @background-pale: #D1C4E9;
 
+// Height variables
 @carousel-item-height: 300px;
 
 //Mixin
-.zero-margin(@pad-up-down: 0px,@pad-left-right: 0px){
-    margin: 0 auto;
-    padding: @pad-up-down @pad-left-right;
+.zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
+	margin:0 auto;
+	padding: @pad-up-dn @pad-left-right;
 }
 
 body {
@@ -22,25 +23,25 @@ body {
 
 .row-content {
     .zero-margin(50px, 0);
-    border-bottom: 1 ridge;
-    min-height: 400px;
+    border-bottom: 1px ridge;
+    min-height:400px;
 }
 
-.footer {
+.footer{
     background-color: @background-pale;
-    .zero-margin(20px, 0);
+    .zero-margin(20px, 0px);
 }
 
 .jumbotron {
-    .zero-margin(70px, 30px);
-    background-color: @background-light;
-    color: floralwhite;
+    .zero-margin(70px,30px);
+    background: @background-light ;
+    color:floralwhite;
 }
 
-.address{
+address{
     font-size:80%;
-    margin: 0;
-    color: #0f0f0f;
+    margin:0px;
+    color:#0f0f0f;
 }
 
 .navbar-dark {
