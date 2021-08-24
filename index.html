@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Ristorante Con Fusion</title>
 </head>
 <body>
@@ -25,7 +25,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a href="" data-toggle="modal" data-target="#loginModal">
+                    <a id="loginModelToggle">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -33,7 +33,7 @@
         </div>
     </nav>
 
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="loginModel" class="modal fade login" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -55,8 +55,9 @@
                             </div>
                             <div class="col-sm-auto">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label class="form-check-label"> Remember me
+                                    <label class="form-check-label" for="remember-me">
+                                        <input class="form-check-input" id="remember-me" type="checkbox">
+                                        Remember me
                                     </label>
                                 </div>
                             </div>
@@ -73,7 +74,7 @@
 
     <header class="jumbotron">
 
-        <div  class="container">
+        <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
@@ -83,7 +84,7 @@
                     <img src="./img/logo.png" calss="img-fluid" alt="Logo">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a href="#ReserveTabl" class="botton-ReserveTable" data-toggle="modal">
+                    <a href="reserveModelToggle" id="reserveModelToggle" class="botton-ReserveTable" data-toggle="modal">
                         <button class="btn btn-block nav-link btn-warning col-12"
                         data-placement="bottom">
                             Reserve Table
@@ -95,9 +96,9 @@
                             Reserve Table
                         </button> -->
                     </a>
-                    <div id="ReserveTabl" class="modal fade ReserveTabl" role="dialog">
+                    <div id="reserveModel" class="modal fade ReserveTabl" role="dialog">
                         <div class="modal-dialog modal-lg" role="content">
-                            <div class="modal-content">
+                            <div class="modal-content tab-content">
                                 <div class="modal-header">
                                     <h4 class="modal-title">Reserve Table</h4>
                                     <button class="close" type="button" data-dismiss="modal">
@@ -107,19 +108,21 @@
                                 <div class="modal-body">
                                     <div class="card-body">
                                         <div class="row">
-                                            <div class="col-12 col-sm-3">
-                                                <h5>Number of Gesrs</h5>
+                                            <div class="row section">
+                                                <div class="col-12 col-sm-3 add-width">
+                                                    <h5>Number of Gesrs</h5>
+                                                </div>
+                                                <div class="col-5 col-sm-6">
+                                                    <label for="1" class="col-1"><input id="1" type="radio" value="1" name="card">1</label>
+                                                    <label for="2" class="col-1"><input id="2" type="radio" value="2" name="card">2</label>
+                                                    <label for="3" class="col-1"><input id="3" type="radio" value="3" name="card">3</label>
+                                                    <label for="4" class="col-1"><input id="4" type="radio" value="4" name="card">4</label>
+                                                    <label for="5" class="col-1"><input id="5" type="radio" value="5" name="card">5</label>
+                                                    <label for="6" class="col-1"><input id="6" type="radio" value="6" name="card">6</label>
+                                                </div>
                                             </div>
-                                            <div class="col-5 col-sm-6">
-                                                <label for="1" class="col-1"><input id="1" type="radio" value="1" name="card">1</label>
-                                                <label for="2" class="col-1"><input id="2" type="radio" value="2" name="card">2</label>
-                                                <label for="3" class="col-1"><input id="3" type="radio" value="3" name="card">3</label>
-                                                <label for="4" class="col-1"><input id="4" type="radio" value="4" name="card">4</label>
-                                                <label for="5" class="col-1"><input id="5" type="radio" value="5" name="card">5</label>
-                                                <label for="6" class="col-1"><input id="6" type="radio" value="6" name="card">6</label>
-                                            </div>
-                                            <div class="row Section">
-                                                <div class="col-sm-4">
+                                            <div class="row section">
+                                                <div class="col-12 col-sm-3 add-width">
                                                     <h5 class="col-12">Section</h5>
                                                 </div>
                                                 <div class="btn-group btn-group-toggle col-sm-8" data-toggle="buttons">
@@ -131,26 +134,26 @@
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-12 col-sm-3">
+                                            <div class="row section">
+                                                <div class="col-12 col-sm-3 add-width">
                                                     <h5 class="col-12">Date and Time</h5>
                                                 </div>
                                                 <div class="col-12 col-sm-9">
-                                                    <span class="col-sm-7">
-                                                        <input type="date">
+                                                    <span class="col-sm-6 date-time">
+                                                        <input type="text" onfocus="(this.type='date')" placeholder="Date" />
                                                     </span>
-                                                    <span class="col-sm-7">
-                                                        <input type="time">
+                                                    <span class="col-sm-6 date-time">
+                                                        <input type="text" onfocus="(this.type='time')" placeholder="Time" />
                                                     </span>
-                                                    <div class="col-12 mt-3">
-                                                        <button class="btn btn-primary" type="submit">
-                                                            Reserve
-                                                        </button>
-                                                        <button class="btn btn-github" type="submit" data-dismiss="modal"><!-- Data-dismiss -> it makes the button closed the modal when clicking the close button-->
-                                                            close
-                                                        </button>
-                                                    </div>
                                                 </div>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <button class="btn btn-primary" type="submit">
+                                                    Reserve
+                                                </button>
+                                                <button class="btn btn-github" type="submit" data-dismiss="modal"><!-- Data-dismiss -> it makes the button closed the modal when clicking the close button-->
+                                                    close
+                                                </button>
                                             </div>
                                         </div>
                                     </div>

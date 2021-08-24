@@ -1,75 +1,162 @@
 $lt-gray: #ddd;
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-pale: #D1C4E9;
+$background-dark: #512da8;
+$background-light: #9575cd;
+$background-pale: #d1c4e9;
 
 // Height variables
 $carousel-item-height: 300px;
 
 //Mixin
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
-	margin:0px auto;
+	margin: 0px auto;
 	padding: $pad-up-dn $pad-left-right;
 }
 
 body {
-    padding: 50px 0 0 0;
-    z-index: 0;
+	padding: 50px 0 0 0;
+	z-index: 0;
 }
-.row-header{
-    @include zero-margin(0px,0px);
+a:hover {
+	text-decoration: none;
 }
-
-.row-content {
-    @include zero-margin(50px,0px);
-    border-bottom: 1px ridge;
-    min-height:400px;
-}
-
-.footer{
-    background-color: $background-pale;
-    @include zero-margin(20px, 0px);
+input {
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
 }
 
-.jumbotron {
-    @include zero-margin(70px,30px);
-    background: $background-light ;
-    color:floralwhite;
-}
-
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
-}
+/* Start Navbar*/
 
 .navbar-dark {
-    background-color: $background-dark;
+	background-color: $background-dark;
 }
-.tab-content {
-    border: 1px solid $lt-gray;
-    border-top: none;
-    padding: 10px;
+#loginModelToggle{
+    cursor: pointer;
 }
-.carousel{
-    background-color: $background-dark;
-    .carousel-item{
-        height: 300px;
-        img{
-            position: absolute;
-            top:0;
-            left: 0;
-            min-height: 300px;
-            .ahmedImg{
-                max-height: 300px !important;
+/*End Navbar*/
+
+/* Start Login */
+.login{
+    .modal-dialog {
+        color: #000;
+    }
+    .modal-content {
+        color: #fff;
+        .modal-header{
+            background-color: $background-dark;
+            border: 0;
+            .close {
+                color: #fff;
+            }
+        }
+        .modal-body{
+            background-color: $background-light;
+            .form-check label {
+                color: #000
             }
         }
     }
 }
 
+/*End Login */
+
+/* Start jumbotron */
+.jumbotron {
+	@include zero-margin(70px, 30px);
+	background: $background-light;
+	color: floralwhite;
+    .row-header {
+        @include zero-margin(0px, 0px);
+        .botton-ReserveTable button {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+        a.botton-ReserveTable {
+            text-decoration: none;
+            color: #000;
+        }
+        .ReserveTabl .section {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+/* End jumbotron */
+
+
+
+.tab-content {
+    border: 0;
+	.modal-header{
+        color: #fff;
+        background-color: $background-dark;
+        border: none;
+        .close{
+            color: #fff;
+        }
+    }
+    .modal-body {
+        background-color: $background-light;
+        .add-width{
+            width: 538px;
+        }
+        .date-time{
+            padding: 0;
+            margin-right: 10px;
+        }
+    }
+}
+/* Start carousel*/
+.carousel {
+	background-color: $background-dark;
+	.carousel-item {
+		height: 300px;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			min-height: 300px;
+			.ahmedImg {
+				max-height: 300px !important;
+			}
+		}
+	}
+}
+
+.carousel-caption {
+	margin-bottom: 36px;
+}
+/* End carousel*/
+
+.card-header a {
+	text-decoration: none;
+	color: rgb(26, 26, 26);
+}
+
+
+
+
 #carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}
+
+.row-content {
+	@include zero-margin(40px, 0px);
+	border-bottom: 1px ridge;
+	min-height: 200px;
+}
+
+.footer {
+	background-color: $background-pale;
+	@include zero-margin(20px, 0px);
+}
+
+address {
+	font-size: 80%;
+	margin: 0px auto;
+	color: #0f0f0f;
 }

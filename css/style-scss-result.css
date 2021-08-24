@@ -3,6 +3,10 @@ body {
 	z-index: 0;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .row-header {
 	margin: 0px auto;
 	padding: 0px 0px;
@@ -10,9 +14,9 @@ body {
 
 .row-content {
 	margin: 0px auto;
-	padding: 50px 0px;
+	padding: 40px 0px;
 	border-bottom: 1px ridge;
-	min-height: 400px;
+	min-height: 200px;
 }
 
 .footer {
@@ -30,12 +34,19 @@ body {
 
 address {
 	font-size: 80%;
-	margin: 0px;
+	margin: 0px auto;
 	color: #0f0f0f;
 }
 
 .navbar-dark {
 	background-color: #512da8;
+}
+
+.ReserveTabl .Section {
+	margin-bottom: 20px;
+}
+.ReserveTabl .Section h5 {
+	margin-right: 82px;
 }
 
 .tab-content {

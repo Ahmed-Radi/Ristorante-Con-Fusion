@@ -1,98 +1,99 @@
-body{
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
+body {
+	padding: 50px 0px 0px 0px;
+	z-index: 0;
 }
 
-a:hover{
-    text-decoration: none;
+a:hover {
+	text-decoration: none;
 }
 
-.row-header{
-    margin:0px auto ;
-    padding:0px auto ;
+.row-header {
+	margin: 0px auto;
+	padding: 0px auto;
 }
 
-.row-content{
-    margin: 0px auto;
-    padding: 40px 0px;
-    border-bottom: 1px ridge;
-    min-height: 200px;
+.row-content {
+	margin: 0px auto;
+	padding: 40px 0px;
+	border-bottom: 1px ridge;
+	min-height: 200px;
 }
 
-.footer{
-    background-color: #d1c4e9;
-    margin: 0px auto;
-    padding: 20px 0px;
+.jumbotron {
+	padding: 70px 30px;
+	margin: 0px auto;
+	background: #9575cd;
+	color: floralwhite;
 }
 
-.jumbotron{
-    padding: 70px 30px;
-    margin: 0px auto;
-    background: #9575cd;
-    color: floralwhite;
+address {
+	font-size: 80%;
+	margin: 0px auto;
+	color: #0f0f0f;
 }
 
-.address{
-    font-size: 80%;
-    margin: 0px auto;
-    color: #0f0f0f;
+.navbar-dark {
+	background-color: #512da8;
 }
 
-.navbar-dark{
-    background-color: #512da8;
+.ReserveTabl .Section {
+	margin-bottom: 20px;
+}
+.ReserveTabl .Section h5 {
+	margin-right: 82px;
 }
 
-.ReserveTabl .Section{
-    margin-bottom: 20px;
+.carousel {
+	background: #512da8;
 }
-.ReserveTabl .Section h5{
-    margin-right: 82px;
+.carousel-item {
+	height: 300px;
 }
-
-.carousel{
-    background: #512da8;
+.carousel-item img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 300px;
 }
-.carousel-item{
-    height: 300px;
+.carousel-item img.ahmedImg {
+	max-height: 300px !important;
 }
-.carousel-item img{
-    position: absolute;
-    top:0;
-    left: 0;
-    min-height: 300px;
-}
-.carousel-item img.ahmedImg{
-    max-height: 300px !important;
-}
-.carousel-caption{
-    /* margin-left: 229px; */
-    margin-bottom: 36px;
+.carousel-caption {
+	/* margin-left: 229px; */
+	margin-bottom: 36px;
 }
 
-.card-header a{
-    text-decoration: none;
-    color: rgb(26, 26, 26);
+.card-header a {
+	text-decoration: none;
+	color: rgb(26, 26, 26);
 }
 
-a.botton-ReserveTable{
-    text-decoration: none;
-    color: #000;
+a.botton-ReserveTable {
+	text-decoration: none;
+	color: #000;
 }
-.botton-ReserveTable button{
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: -1px;
+.botton-ReserveTable button {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: -1px;
 }
 
-.modal-dialog{
-    color: #000;
+.modal-dialog {
+	color: #000;
 }
-#carouselButton{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
+#carouselButton {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
 }
+
+.footer {
+	background-color: #d1c4e9;
+	margin: 0px auto;
+	padding: 20px 0px;
+}
+
 /*
 @media screen and (max-width: 990px){
     .carousel-caption{
