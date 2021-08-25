@@ -4,7 +4,7 @@ This course first course in  Full-Stack Web Development with React Specializatio
 
 Course link: https://www.coursera.org/learn/bootstrap-4/home/welcome
 
-This project created by using : HTML - CSS - Bootstrap 4 - JavaScript
+This project created by using : ```HTML - CSS - Sass - Less - Bootstrap 4 - JQuery```
 
 
 ## Project Link : https://ahmed-radi.github.io/FullStackCourse/
