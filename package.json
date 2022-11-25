@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Ahmed-Radi/FullStackCourse#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4",
+    "lite-server": "^2.6.1",
     "node-sass": "^7.0.0"
   },
   "dependencies": {
